@@ -3420,7 +3420,7 @@ static NSArray *GEO_MOBILE_COUNTRIES;
            defaultRegion:(NSString *)defaultRegion
                    error:(NSError **)error {
   NSError *anError = nil;
-  BOOL checkRegion = defaultRegion.length > 0;
+  BOOL checkRegion = (defaultRegion.length > 0);
   NBPhoneNumber *phoneNumber = [self parseHelper:numberToParse
                                    defaultRegion:defaultRegion
                                     keepRawInput:NO
